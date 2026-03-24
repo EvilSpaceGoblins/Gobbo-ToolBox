@@ -1,16 +1,16 @@
 # Gobbo ToolBox (Main Public Repository)
 
-## Übersicht
-Diese Repository ist das zentrale Meta-Projekt der Gobbo-Tools-Suite und beinhaltet Verweise, Informationen und Issue-Workflows für:
+## Overview
+This repository is the central meta-project for the Gobbo Tools suite and provides references, information, and issue workflows for:
 
 - **Indu Gobbo** (Planetary Interaction, Moon Mining, Industry)
-- **Trader Gobbo** (Markt- und Handels-Assistent)
-- **Locator Gobbo** (Charakter-Sucher und -Tracker)
-- **Gobbo Manager** (API/Account-Manager / Backoffice)
+- **Trader Gobbo** (Market and Trading Assistant)
+- **Locator Gobbo** (Character Finder and Tracker)
+- **Gobbo Manager** (API/Account Manager / Backoffice)
 
-Ziel: ein einheitlicher Einstiegspunkt für Benutzer und Mitwirkende, die auf das Gobbo-Ökosystem zugreifen und Beiträge leisten möchten.
+Goal: a single entry point for users and contributors who want to access and contribute to the Gobbo ecosystem.
 
-## Anwendungen
+## Applications
 
 ### Indu Gobbo
 - Planung & Optimierung von Planetary Interaction (PI)
