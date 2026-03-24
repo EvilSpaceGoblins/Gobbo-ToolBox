@@ -1,0 +1,67 @@
+name: "Report an Issue / Feature"
+description: "Submit a bug report or feature request for any Gobbo project."
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to report bugs or request features for any Gobbo project.
+
+  - type: dropdown
+    id: application
+    attributes:
+      label: Application
+      description: Select which Gobbo application this report applies to.
+      options:
+        - Gobbo Manager
+        - Indu Gobbo
+        - Locator Gobbo
+        - Trader Gobbo
+        - Other
+
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Issue type
+      options:
+        - Bug
+        - Feature
+
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: Discord/GitHub handle or email (optional)
+      placeholder: username#1234 or @github
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the issue or feature request in detail.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Steps to reproduce the issue (if applicable).
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: false
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: false
