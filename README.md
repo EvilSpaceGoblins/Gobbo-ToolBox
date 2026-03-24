@@ -1,8 +1,82 @@
-# The-Indu-Goblin
+# Gobbo ToolBox (Main Public Repository)
 
-## Goblinize your Industry!
+## Übersicht
+Diese Repository ist das zentrale Meta-Projekt der Gobbo-Tools-Suite und beinhaltet Verweise, Informationen und Issue-Workflows für:
 
-A comprehensive multi-purpose industry tool for managing and optimizing your Moon Mining, Planetary Interaction (PI), and future industry operations in EVE Online.
+- **Indu Gobbo** (Planetary Interaction, Moon Mining, Industry)
+- **Trader Gobbo** (Markt- und Handels-Assistent)
+- **Locator Gobbo** (Charakter-Sucher und -Tracker)
+- **Gobbo Manager** (API/Account-Manager / Backoffice)
+
+Ziel: ein einheitlicher Einstiegspunkt für Benutzer und Mitwirkende, die auf das Gobbo-Ökosystem zugreifen und Beiträge leisten möchten.
+
+## Anwendungen
+
+### Indu Gobbo
+- Planung & Optimierung von Planetary Interaction (PI)
+- Moon Mining-Auswertung & Profitberechnung
+- Industrie-/Blueprint-Kalkulation und Produktionsübersicht
+- Dashboard zu Factional und regionalem Markt
+
+### Trader Gobbo
+- Einkauf/Aktualisierung von Handelsscans, Shopping-Listen, In-Transit-Items
+- Marktüberwachung + Opportunity-Analyse
+- ESI-basierte Ordersynchronisation (Individuelle Charakter-Orders)
+- Trade-Nachverfolgung mit UUID-Linking an InTransit/Logs
+
+### Locator Gobbo
+- Suche und Anzeige von Charakterstandorten in EVE
+- Koordinaten, Region/Station, Online-Status
+- Historie der Bewegungen
+
+### Gobbo Manager
+- Verwaltung von API-Tokens, User-Accounts, Berechtigungen
+- Monitoring + Scheduler-Tasks für alle Gobbo-Module
+
+## Links
+- Indu Gobbo: https://github.com/EvilSpaceGoblins/induBro (Beispiel)
+- Trader Gobbo: https://github.com/EvilSpaceGoblins/traderGobbo
+- Locator Gobbo: https://github.com/EvilSpaceGoblins/locatorGobbo
+- Gobbo Manager: https://github.com/EvilSpaceGoblins/gobbo-manager
+
+(Ersetze ggf. durch tatsächliche Projekt-URLs, falls anders.)
+
+## Issue-Workflow
+Bitte verwende die spezifischen Issue-Templates (für jede Anwendung) beim Öffnen neuer Issues:
+- `indu-gobbo.yml`
+- `trader-gobbo.yml`
+- `locator-gobbo.yml`
+- `gobbo-manager.yml`
+
+### Was ist ein Bug?
+- Funktionalität bricht auf bestimmten Seiten (z. B. Login, Datenabfrage, Marktpreisanzeige)
+- Exceptions in Backend Logs (`OperationalError`, 500-Errors)
+- Synchronisation/ESI-Aufruffehler
+
+### What are feature requests?
+- Neuer modulübergreifender Workflow (z. B. Auto-Trade, Forecasting)
+- UI-Erweiterungen (z. B. Filter, Export, Dark Mode)
+- Zusätzliche ESI-Scopes oder API-Endpunkte
+
+### Not Now / Nicht relevant
+- Inhalte, die nur „nette Ideen“ sind, aber keine Umsetzungsabsicht haben (verwende `[idea]` Label)
+- Persönliche Support-Anfragen (bitte im Discord-Channel / Discussion)
+
+## Contribution Guidelines
+- Fork & PR: Branch `feature/<name>` oder `bugfix/<name>`
+- Code-Stil: PEP8 (Python), Airbnb/Prettier (JS/TS)
+- Tests: vorhandene `pytest` + `vitest` nutzen
+- Review: PR mit Beschreibung, Screenshots und Reproduktionsschritten
+
+## Repository-Struktur
+- `/induBro` – PI/Industry-UI + Backend
+- `/traderGobbo` – Trader Backend/Frontend
+- `/locatorGobbo` – Locator Backend/Frontend
+- `/Gobbo-ToolBox` – Meta und Dokumentation
+
+## Support & Kontakt
+- GitHub Discussions: https://github.com/orgs/EvilSpaceGoblins/discussions
+- Discord: https://bounty.github.com/
 
 ## Features
 

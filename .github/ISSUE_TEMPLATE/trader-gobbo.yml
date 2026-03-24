@@ -1,0 +1,76 @@
+name: "Trader Gobbo - Issue or Bug"
+description: "Report a bug or issue specifically for Trader Gobbo."
+labels: ["bug", "trader-gobbo"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting an issue for **Trader Gobbo**.
+
+  - type: input
+    id: application
+    attributes:
+      label: Application
+      description: Always set to `Trader Gobbo` (automated for triage)
+      value: "Trader Gobbo"
+      readonly: true
+
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Issue type
+      description: Choose whether this is a bug report or feature request
+      options:
+        - Bug
+        - Feature
+
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: Discord/GitHub handle or email (optional)
+      placeholder: username#1234 or @github
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Issue Description
+      description: Describe the issue in as much detail as possible.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - Shopping Lists
+        - In-Transit
+        - ESI Calls
+        - Trading Engine
+        - UI
+        - Backend
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Step-by-step instructions to reproduce the issue.
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: false
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: false
