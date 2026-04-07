@@ -48,8 +48,12 @@ body:
       options:
         - Shopping Lists
         - In-Transit
+        - Market Monitoring
+        - Opportunity Analysis
         - ESI Calls
         - Trading Engine
+        - Order Synchronization
+        - Trade Tracking
         - UI
         - Backend
 

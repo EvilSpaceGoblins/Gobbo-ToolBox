@@ -48,6 +48,8 @@ body:
       options:
         - Location Search
         - Character History
+        - Online Status
+        - Movement Tracking
         - ESI / Data Fetch
         - UI
         - Backend

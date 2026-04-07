@@ -1,0 +1,91 @@
+name: "Shipyard - Issue, Request, or Bug"
+description: "Report a bug, request a ship, or issue for the Shipyard component."
+labels: ["shipyard", "indu-gobbo"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting an issue or making a request for the **Shipyard**.
+
+  - type: input
+    id: application
+    attributes:
+      label: Application
+      description: Always set to `Shipyard` (automated for triage)
+      value: "Shipyard"
+      readonly: true
+
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Issue type
+      description: Choose the type of issue or request
+      options:
+        - Bug
+        - Feature Request
+        - Ship Request
+        - Discord Integration Issue
+        - Order Management Issue
+
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: Discord handle, GitHub handle, or email (required for ship requests)
+      placeholder: username#1234 or @github or email@example.com
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the issue, request, or ship details in as much detail as possible.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - Catalog Management
+        - Order Submission
+        - Down Payment Handling
+        - Discord Notifications
+        - EFT Parsing
+        - Delivery Locations
+        - Warehouse Stock
+        - UI
+        - API
+        - Scheduler
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Step-by-step instructions to reproduce the issue (if applicable).
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: false
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: false
+
+  - type: textarea
+    id: ship_details
+    attributes:
+      label: Ship Details (for Ship Requests)
+      description: Provide EFT fit, quantity, delivery location, and any special notes.
+    validations:
+      required: false

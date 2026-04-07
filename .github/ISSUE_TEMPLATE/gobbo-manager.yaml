@@ -48,6 +48,9 @@ body:
       options:
         - Auth
         - Accounts
+        - Permissions
+        - Token Management
+        - Monitoring
         - Scheduler
         - API Gateway
         - UI

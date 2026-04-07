@@ -3,7 +3,7 @@
 ## Overview
 This repository is the central meta-project for the Gobbo Tools suite and provides references, information, and issue workflows for:
 
-- **Indu Gobbo** (Planetary Interaction, Moon Mining, Industry)
+- **Indu Gobbo** (Planetary Interaction, Moon Mining, Industry, Shipyard)
 - **Trader Gobbo** (Market and Trading Assistant)
 - **Locator Gobbo** (Character Finder and Tracker)
 - **Gobbo Manager** (API/Account Manager / Backoffice)
@@ -16,7 +16,23 @@ Goal: a single entry point for users and contributors who want to access and con
 - Planning & optimization of Planetary Interaction (PI)
 - Moon mining analysis & profit calculation
 - Industry/blueprint calculation and production overview
+- Shipyard: Custom ship building orders, catalog management, and Discord integration
 - Factional and regional market dashboard
+
+### Trader Gobbo
+- Purchasing/updating market scans, shopping lists, in-transit items
+- Market monitoring + opportunity analysis
+- ESI-based order synchronization (individual character orders)
+- Trade tracking with UUID linking to InTransit/logs
+
+### Locator Gobbo
+- Search and display of character locations in EVE
+- Coordinates, region/station, online status
+- Movement history
+
+### Gobbo Manager
+- Management of API tokens, user accounts, permissions
+- Monitoring + scheduler tasks for all Gobbo modules
 
 ### Trader Gobbo
 - Purchasing/updating market scans, shopping lists, in-transit items
@@ -42,6 +58,7 @@ Goal: a single entry point for users and contributors who want to access and con
 ## Issue Workflow
 Please use the specific issue templates (for each application) when opening new issues:
 - `indu-gobbo.yml`
+- `shipyard.yml`
 - `trader-gobbo.yml`
 - `locator-gobbo.yml`
 - `gobbo-manager.yml`

@@ -49,6 +49,8 @@ body:
         - PI
         - Moon Mining
         - Industry
+        - Shipyard
+        - Market Dashboard
         - UI
         - API
         - Scheduler
